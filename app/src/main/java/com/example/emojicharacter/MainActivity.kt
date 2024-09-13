@@ -151,12 +151,13 @@ fun GenerateEmoji(modifier: Modifier = Modifier) {
                             checked = selectedSkinTone == tone,
                             onCheckedChange = {
                                 if (it) {
+                                    focusManager.clearFocus()
                                     selectedSkinTone = tone
                                     showEmoji = false
                                 }
                             },
                             colors = CheckboxDefaults.colors(
-                                 // Outer color when unchecked
+                                // Outer color when unchecked
                             )
                         )
                         Text(tone)

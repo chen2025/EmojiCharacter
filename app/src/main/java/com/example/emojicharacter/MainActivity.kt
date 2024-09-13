@@ -217,14 +217,14 @@ fun GenerateEmoji(modifier: Modifier = Modifier) {
             ) {
                 Column(
                     modifier = Modifier
-                        .padding(16.dp)
+                        .padding(10.dp)
                         .fillMaxSize(),
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
                 ) {
                     Text(text = name, fontSize = 30.sp, fontWeight = FontWeight.Bold)
                     Spacer(modifier = Modifier.height(8.dp))
-                    Text(text = emoji, fontSize = 50.sp)
+                    Text(text = emoji, fontSize = 65.sp)
                 }
             }
         }
